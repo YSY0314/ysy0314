@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="./bower_components/Swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-container .swiper-slide {
+      background-size: cover;
+    }
+    .swiper-container .swiper-slide .memo {
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 3%;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide", style="background-image: url('./image/slide/1.jpg')">
+        <div class="memo">
+          <p class="css15ae6ac9a4afa">
+            世界那么大，能遇见不容易😂.虽说做了三年的同学，但是真正认识你也算是从最后那一年开始的吧，原来就像是在一个班上的陌生人一样.没有什么交集.
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide", style="background-image: url('./image/slide/2.jpg')">
+        <div class="memo">
+          <p>
+            记得第一次给你发消息好像是因为在夜黑风高的晚上😂，你灰暗的图标亮了起来，本来以为从来不会登QQ的你，也就这样走进了我的视野
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('./image/slide/3.jpg'); background-color: rgba(255,255,255,0.4)">
+        <div class="memo">
+          <p>
+            虽然记得以前每天晚上回去聊天啊聊天啊什么的.但是印象最深的还是那次，你上线你就“唉”，然而没张你，继续说我的事，你是不是就生气了喃😂（想说明你不是那么小气请来辩）
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('./image/slide/5.jpg');">
+        <div class="memo">
+          <p style="font-size: smaller">
+            考完了试，我们也都过去读书了.每天上学的时候就能在走廊上看着你十分着急的进学校（这是病，得治）还记得每天晚上我都会“遇见”你吗（也是够猥琐了哈）所以每天放学我总是第一个，然后就去爱达乐买面包吧，但是有时候你会神奇消失吗😒，每次和你都走到红绿灯那，然后就是一阵狂奔的漫漫回家路了
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('./image/slide/6.jpg'); background-color: rgba(255,255,255,0.6)">
+        <div class="memo">
+          <p>
+            然后你就告诉我你要出去考试了。但是并没有决定，靠什么决定嘞？看心情。。现在我才知道那是你的口头禅😒然后就开始了等待（ok,ok就叫等待吧）
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div>
+      <div class="swiper-slide", style="background-image: url('./image/slide/4.jpg'); background-color: rgba(255,255,255,0.4)">
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="./bower_components/requirejs/require.js"></script>
+  <script src="./js/lib/jquery.min.js"></script>
+  <script>
+    require.config({
+      baseUrl: './js',
+      paths: {
+        'vue': 'lib/vue',
+        'swiper': '../bower_components/Swiper/dist/js/swiper.min'
+      }
+    })
+    require(['main'], function() {
+
+    })
+  </script>
+  <script type="text/javascript">
+    // $youzikuapi.asyncLoad("http://api.youziku.com/webfont/FastJS/yzk_B49F33B65CC8C4BA", function () {
+    // $youziku.load("#id1", "220518e4e67347cba0a94dc67a955911", "TianZhen");
+    // $youziku.draw();
+    // })
+  </script>
+</body>
+
+</html>
